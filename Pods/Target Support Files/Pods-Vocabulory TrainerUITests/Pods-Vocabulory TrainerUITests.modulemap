@@ -1,0 +1,6 @@
+framework module Pods_Vocabulory_TrainerUITests {
+  umbrella header "Pods-Vocabulory TrainerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
