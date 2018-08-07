@@ -29,6 +29,7 @@
 		9C98998021158AB100CBBCA5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9899772115801000CBBCA5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C98998121158AB100CBBCA5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9899782115801100CBBCA5 /* RealmSwift.framework */; };
 		9C98998221158AB100CBBCA5 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9899782115801100CBBCA5 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CF811B62119CD0800E73D7F /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF811B52119CD0800E73D7F /* Downloader.swift */; };
 		9E25809C126D8443B66B0C64 /* Pods_Vocabulory_TrainerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5C746BF10B890C6773C55 /* Pods_Vocabulory_TrainerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		9C9899782115801100CBBCA5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		9C98997B2115870100CBBCA5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		9C98997D2115878D00CBBCA5 /* VocabuloryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabuloryItem.swift; sourceTree = "<group>"; };
+		9CF811B52119CD0800E73D7F /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		BD79771D34A68442CD31CDD0 /* Pods_Vocabulory_TrainerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vocabulory_TrainerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C5C746BF10B890C6773C55 /* Pods_Vocabulory_TrainerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vocabulory_TrainerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 		9C76052B2116B9E300127622 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9CF811B52119CD0800E73D7F /* Downloader.swift */,
 				9C76052E2116BAAC00127622 /* CSVHandler.swift */,
 			);
 			path = Helper;
@@ -447,12 +450,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vocabulory Trainer/Pods-Vocabulory Trainer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
@@ -492,6 +497,7 @@
 				9C98997E2115878D00CBBCA5 /* VocabuloryItem.swift in Sources */,
 				9C6DF5E8211543E100FACC40 /* VocabuloryViewController.swift in Sources */,
 				9C76052F2116BAAC00127622 /* CSVHandler.swift in Sources */,
+				9CF811B62119CD0800E73D7F /* Downloader.swift in Sources */,
 				9C98997C2115870100CBBCA5 /* RealmManager.swift in Sources */,
 				9C7605362116D1F600127622 /* UIViewController+Toast.swift in Sources */,
 				9C6DF5E6211543E100FACC40 /* AppDelegate.swift in Sources */,

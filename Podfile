@@ -11,8 +11,9 @@ target 'Vocabulory Trainer' do
   source 'https://github.com/CocoaPods/Specs.git'
   platform :ios, '8.0'
   use_frameworks!
-  
   pod "GSMessages"
+  pod 'Alamofire', '~> 4.7'
+
 
   target 'Vocabulory TrainerTests' do
     inherit! :search_paths

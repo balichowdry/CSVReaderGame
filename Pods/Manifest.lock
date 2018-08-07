@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - GSMessages (1.5.1)
   - ProgressHUD (2.51)
   - SwiftMessages (4.1.4):
@@ -6,21 +7,24 @@ PODS:
   - SwiftMessages/App (4.1.4)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - GSMessages
   - ProgressHUD
   - SwiftMessages
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - GSMessages
     - ProgressHUD
     - SwiftMessages
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GSMessages: 2e6893301ae99f59d72a6d8c920ad41be407216c
   ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
   SwiftMessages: 2c33fdee8b8f38dfc7e1036684456b505891da8c
 
-PODFILE CHECKSUM: 243cb67f4745eab9ba4d7bc012c54ba33d7c4005
+PODFILE CHECKSUM: 1e30c7e982386b68bd1cf45dcb6cefa1b106ee7d
 
 COCOAPODS: 1.5.3
