@@ -43,6 +43,28 @@ class VocabuloryViewController: UIViewController {
     var listView = [String]()
     var FinalArray = [[String]]()
     
+    //MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        creatCSV(filename: "FirstLesson")
+        readCsv(filename: "FirstLesson")
+        self.csvData()
+        
+        // Download file using download Manager
+        DownloadManager.shared.downloadFile(url: "Testing String")
+        
+        if !UserDefaults.standard.bool(forKey: "Inserted") {
+            csv(data: csvString)
+        }
+        totalCount = RealmManager.sharedInstance.getDataFromRealm().count
+        self.setupView()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     // MARK: IBAction Submit
     @IBAction func submit(_ sender: Any) {
         if index < totalCount {
@@ -116,25 +138,6 @@ class VocabuloryViewController: UIViewController {
             self.scoreLabel.text = String(format: "Score: %@", "Zero")
             restart()
         }
-    }
-    
-    //MARK: Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        creatCSV(filename: "FirstLesson")
-        readCsv(filename: "FirstLesson")
-        self.csvData()
-        
-        if !UserDefaults.standard.bool(forKey: "Inserted") {
-            csv(data: csvString)
-        }
-        totalCount = RealmManager.sharedInstance.getDataFromRealm().count
-        self.setupView()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: BusinessLogic
