@@ -14,7 +14,7 @@ extension String {
     }
     
     func appendToURL(fileURL: URL) throws {
-        var data = self.data(using: String.Encoding.utf8)!
+        let data = self.data(using: String.Encoding.utf8)!
         try data.append(fileURL: fileURL)
     }
 }

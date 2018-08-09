@@ -51,7 +51,7 @@ class VocabuloryViewController: UIViewController {
         self.csvData()
         
         // Download file using download Manager
-        DownloadManager.shared.downloadFile(url: "Testing String")
+        DownloadManager.shared.downloadFile(url: "https://exmapleurl")
         
         if !UserDefaults.standard.bool(forKey: "Inserted") {
             csv(data: csvString)
@@ -297,7 +297,7 @@ class VocabuloryViewController: UIViewController {
     func SaveNewRecord() {
         
         //create a path for file
-        let text:String = "mynewcsv"
+        let text:String = "FirstLesson"
         let fileName = "\(text.lowercased()).csv"
         let path1 = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         let documentDirectoryPath:String = path1[0]
@@ -321,7 +321,7 @@ class VocabuloryViewController: UIViewController {
             }
             
             //Update CSV file
-            self.updateCsvFile(filename: text.lowercased())
+            self.updateCsvFile(filename: text.lowercased(), count: 1)
         }
         else
         {
@@ -338,7 +338,7 @@ class VocabuloryViewController: UIViewController {
         }
     }
     
-    func updateCsvFile(filename: String) -> Void {
+    func updateCsvFile(filename: String, count: Int) -> Void {
         
         //Name for file
         let fileName = "\(filename).csv"
@@ -382,7 +382,8 @@ class VocabuloryViewController: UIViewController {
         let path = NSURL(fileURLWithPath: documentDirectoryPath).appendingPathComponent(fileName)
         
         //Headers for file
-        var csvText = "German,English,Count\n"
+//        var csvText = "German,English,Count\n"
+        var csvText = "German,English,Count\nTisch,table,0\n Wetter,weather,0\n Fahrrad,bicycle,0\n"
         
         //Loop to save array //details below header
         for item in itemArray
@@ -396,6 +397,8 @@ class VocabuloryViewController: UIViewController {
             //save
             try csvText.write(to: path!, atomically: true, encoding: String.Encoding.utf8)
             showToast(message: "csv is saved")
+            print("Path: \(String(describing: path))")
+            SaveNewRecord()
         }
         catch
         {
@@ -430,5 +433,25 @@ extension VocabuloryViewController {
             result.append(columns)
         }
         return result
+    }
+
+    func handlingMultipleFiles() {
+//        let folder : FolderRealm  = FolderRealm()
+//        folder.folderName = searchBarObj.text!
+//        folder.createdDate = Date()
+//
+//        let subFolder1: SubFolderRealm = SubFolderRealm()
+//        subFolder1.subFolderName = "any string"
+//        subFolder1.createdDate = Date()
+//
+//        let subFolder2: SubFolderRealm = SubFolderRealm()
+//        subFolder2.subFolderName = "any string"
+//        subFolder2.createdDate = Date()
+//
+//        folder.subFolders = [subFolder1, subFolder2]
+//
+//        try! realm.write {
+//            realm.add(folder)
+//        }
     }
 }
