@@ -12,6 +12,5 @@ import RealmSwift
 class Vocabulory: Object {
     
     @objc dynamic var VocabuloryName : String?
-//    dynamic var createdDate : Date?
     let vocabuloryItems = List<VocabuloryItem>()
 }

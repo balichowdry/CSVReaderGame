@@ -11,6 +11,8 @@
 		9072F70A643F82B77A686673 /* Pods_Vocabulory_TrainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD79771D34A68442CD31CDD0 /* Pods_Vocabulory_TrainerTests.framework */; };
 		9C1E4D46211C7CDB00116117 /* Vocabulory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E4D45211C7CDB00116117 /* Vocabulory.swift */; };
 		9C3D47A1211C70F500D27360 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D47A0211C70F500D27360 /* Loggable.swift */; };
+		9C4C8B75211E85450026910F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C8B74211E85450026910F /* Constants.swift */; };
+		9C4C8B77211E880E0026910F /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C8B76211E880E0026910F /* CSVHandler.swift */; };
 		9C6DF5E6211543E100FACC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DF5E5211543E100FACC40 /* AppDelegate.swift */; };
 		9C6DF5E8211543E100FACC40 /* VocabuloryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DF5E7211543E100FACC40 /* VocabuloryViewController.swift */; };
 		9C6DF5EB211543E100FACC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DF5E9211543E100FACC40 /* Main.storyboard */; };
@@ -19,7 +21,6 @@
 		9C6DF5FB211543E200FACC40 /* Vocabulory_TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DF5FA211543E200FACC40 /* Vocabulory_TrainerTests.swift */; };
 		9C6DF606211543E200FACC40 /* Vocabulory_TrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DF605211543E200FACC40 /* Vocabulory_TrainerUITests.swift */; };
 		9C76052A2116A81600127622 /* FirstLesson.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9C7605292116A81600127622 /* FirstLesson.csv */; };
-		9C76052F2116BAAC00127622 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76052E2116BAAC00127622 /* CSVHandler.swift */; };
 		9C7605362116D1F600127622 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7605352116D1F600127622 /* UIViewController+Toast.swift */; };
 		9C7605412116D2E400127622 /* String+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7605402116D2E400127622 /* String+Append.swift */; };
 		9C7605432116D34500127622 /* Data+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7605422116D34500127622 /* Data+Append.swift */; };
@@ -77,6 +78,8 @@
 		8A6366B7CE8A96D58BF606FD /* Pods-Vocabulory Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulory Trainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vocabulory Trainer/Pods-Vocabulory Trainer.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1E4D45211C7CDB00116117 /* Vocabulory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulory.swift; sourceTree = "<group>"; };
 		9C3D47A0211C70F500D27360 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		9C4C8B74211E85450026910F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C4C8B76211E880E0026910F /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
 		9C6DF5E2211543E100FACC40 /* Vocabulory Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocabulory Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6DF5E5211543E100FACC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6DF5E7211543E100FACC40 /* VocabuloryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabuloryViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		9C6DF605211543E200FACC40 /* Vocabulory_TrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulory_TrainerUITests.swift; sourceTree = "<group>"; };
 		9C6DF607211543E200FACC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7605292116A81600127622 /* FirstLesson.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FirstLesson.csv; sourceTree = "<group>"; };
-		9C76052E2116BAAC00127622 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
 		9C7605352116D1F600127622 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		9C7605402116D2E400127622 /* String+Append.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Append.swift"; sourceTree = "<group>"; };
 		9C7605422116D34500127622 /* Data+Append.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Append.swift"; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 		9C3D4795211C705700D27360 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
-				9C76052E2116BAAC00127622 /* CSVHandler.swift */,
+				9C4C8B76211E880E0026910F /* CSVHandler.swift */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -282,6 +284,7 @@
 			children = (
 				9C3D479F211C70D500D27360 /* Utils */,
 				9C7605342116D1C900127622 /* Extension */,
+				9C4C8B74211E85450026910F /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -518,13 +521,14 @@
 				9C7605432116D34500127622 /* Data+Append.swift in Sources */,
 				9C98997E2115878D00CBBCA5 /* VocabuloryItem.swift in Sources */,
 				9C6DF5E8211543E100FACC40 /* VocabuloryViewController.swift in Sources */,
-				9C76052F2116BAAC00127622 /* CSVHandler.swift in Sources */,
 				9C1E4D46211C7CDB00116117 /* Vocabulory.swift in Sources */,
 				9CF811B62119CD0800E73D7F /* DownloadManager.swift in Sources */,
 				9C98997C2115870100CBBCA5 /* RealmManager.swift in Sources */,
 				9C7605362116D1F600127622 /* UIViewController+Toast.swift in Sources */,
 				9C3D47A1211C70F500D27360 /* Loggable.swift in Sources */,
+				9C4C8B77211E880E0026910F /* CSVHandler.swift in Sources */,
 				9C6DF5E6211543E100FACC40 /* AppDelegate.swift in Sources */,
+				9C4C8B75211E85450026910F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

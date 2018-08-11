@@ -11,7 +11,6 @@ import UIKit
 //MARK: Custom Toast message
 extension UIViewController {
     
-    //Add a toast message on Screen
     func showToast(message : String) {
         
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-300, width: 200, height: 35))
